@@ -1,5 +1,5 @@
 @app
-src
+architect-serveless-poc
 
 @http
 get /
