@@ -17,6 +17,11 @@ ignore
   tmp
   user
 
+@tables
+user
+  userId *String
+  stream true
+
 # @aws
 # profile default
 # region us-west-1
