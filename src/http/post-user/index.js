@@ -11,7 +11,7 @@ async function handler (req) {
       throw ReferenceError('missing name')
 
     let data = await arc.tables()
-    let user = await data.users.put(req.body)
+    let user = await data.user.put(req.body)
 
     return {
       status: 201,
