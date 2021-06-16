@@ -2,25 +2,22 @@
 architect-serveless-poc
 
 @http
-get /
+post /user
+get /user
+post /user/:userID
+post /user/:userID/delete
 
-@views
-get /
 
 @queues
 basic-queue
 
-@static
-fingerprint true
-ignore
-  .tar.gz
-  tmp
-  user
-
 @tables
 user
-  userId *String
-  stream true
+  userID *String
+
+@indexes
+user
+  date *String
 
 # @aws
 # profile default
